@@ -70,7 +70,7 @@ header{
   color: #979797;
   text-align: center;
 }
-.navbar .icones-mobile {
+header .icones-mobile {
   display: none;
 }
 
@@ -431,7 +431,7 @@ main{
         display: none;
       }
     
-      .navbar .container {
+      header .container {
         padding: 0 20px;
       }
     
@@ -467,15 +467,15 @@ main{
         margin-top: 0;
       }
     
-      .navbar .pesquisa {
+      header .pesquisa {
         display: none;
       }
     
-      .navbar .icones {
+      header .icones {
         display: none;
       }
     
-      .navbar .icones-mobile {
+      header .icones-mobile {
         display: flex;
       }
     
@@ -494,7 +494,7 @@ main{
         left: 0;
       }
     
-      .navbar .logo {
+      header .logo {
         display: none;
       }
     

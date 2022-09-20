@@ -44,7 +44,7 @@ return(
                 </div>
 
                 <div class="conteudo">
-                    <img src={props.conteudo} alt="post" />
+                    <img src={props.conteudo} alt="post"  onClick={curtir} />
                 </div>
 
                 <div class="fundo">
