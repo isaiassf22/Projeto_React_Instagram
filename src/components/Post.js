@@ -7,6 +7,8 @@ import ad_animals from './img/adorable_animals.svg'
 import cat from "./img/gato-telefone.svg"
 import dog from "./img/dog.svg"
 import React from "react"
+import kakashi from "./img/img614da6ac1c2bc2.45012985.jpg"
+import post_kakashi from "./img/original.jpg"
 function RecebendoPosts(props){
 
 
@@ -44,7 +46,7 @@ return(
                 </div>
 
                 <div class="conteudo">
-                    <img src={props.conteudo} alt="post"  onClick={curtir} />
+                    <img src={props.conteudo} alt="post"  onClick={curtida? descurtir: curtir} />
                 </div>
 
                 <div class="fundo">
@@ -73,7 +75,8 @@ return(
 export default function Posts() {
     // LISTA QUE SIMULA API
     const listaDePosts=[{usuario:meowed, usuarioName:'meowed', conteudo:cat,curtidoPic:respondeai ,curtidoName:'respondeai', curtidas:101222 },
-    {usuario:ad_animals, usuarioName:'adorable_animals', conteudo:dog,curtidoPic:barked ,curtidoName:'barked', curtidas:684}]
+    {usuario:ad_animals, usuarioName:'adorable_animals', conteudo:dog,curtidoPic:barked ,curtidoName:'barked', curtidas:684},
+    {usuario:kakashi, usuarioName:'kakashi', conteudo:post_kakashi,curtidoPic:barked ,curtidoName:'barked', curtidas:202674}]
     
     const RenderizaPost=listaDePosts.map((n) => RecebendoPosts(n))
     return (

@@ -183,11 +183,23 @@ main{
   .post .usuario, .post .topo img, .post .fundo img, .post ion-icon, .post strong, .usuario ion-icon, .usuario > img, .conteudo > img {
     cursor: pointer;
   }
-  
+
+  .post .conteudo{
+    position: relative;
+  }
+
   .post .conteudo img {
     width: 100%;
   }
   
+  .post .conteudo ion-icon{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+  }
+
   .post .fundo .acoes {
     display: flex;
     justify-content: space-between;
