@@ -16,8 +16,13 @@ function RecebendoPosts(props){
 const [curtida, setCurdida]=React.useState(false)
 const [numeroCurtida, setNumeroCurtida]=React.useState(props.curtidas)
 function curtir(){
-    setCurdida(true)
+    if (curtida===true){
+        return
+    }else{
+        setCurdida(true)
     setNumeroCurtida(numeroCurtida+1)
+    }
+    
 }
 function descurtir(){
     setCurdida(false)
@@ -46,7 +51,8 @@ return(
                 </div>
 
                 <div class="conteudo">
-                    <img src={props.conteudo} alt="post"  onClick={curtida? descurtir: curtir} />
+                    <img src={props.conteudo} alt="post"  onClick={curtir} />
+
                 </div>
 
                 <div class="fundo">

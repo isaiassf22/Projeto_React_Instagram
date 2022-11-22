@@ -27,6 +27,7 @@ export default function BoxStories() {
   //
   const conteinerDeStories = [{ imagem: pic9gag, nome: '9gag' }, { imagem: meowed, nome: 'meowed' }, { imagem: barked, nome: 'barked' }, { imagem: wawawicomics, nome: 'wawawicomics' },
   { imagem: nathanwpylestrangeplanet, nome: ' nathanwpylestrangeplanet' }, { imagem: respondeai, nome: 'respondeai' }, { imagem: filomoderna, nome: 'filomoderna' }, { imagem: memeriagourmet, nome: 'memeriagourmet' }]
+  
   const renderizarStories = conteinerDeStories.map((n) => RecebendoProps(n))
 
   return (
